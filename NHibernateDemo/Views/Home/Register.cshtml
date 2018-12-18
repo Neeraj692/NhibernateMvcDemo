@@ -1,0 +1,46 @@
+﻿@{
+    ViewBag.Title = "Register";
+}
+
+<h2>Register</h2>
+
+<h2>@ViewBag.Message</h2>
+@{
+
+    using (Html.BeginForm("Register", "Home", FormMethod.Post, new { id = "myForm" }))
+    {
+
+        <p>
+            <label>Name</label>
+            <br>
+            @Html.TextBox("Name")
+
+        </p>
+        <p>
+            <br>
+            <label>1. Car Model</label>
+            <br>
+            @Html.TextBox("CarModel1")
+        </p>
+        <p>
+            <label>1. Year</label>
+            <br>
+            @Html.TextBox("Year1")
+        </p>
+
+        <br><br>
+        <p>
+            <label>2. Car Model</label>
+            <br>
+            @Html.TextBox("CarModel2")
+        </p>
+        <p>
+            <label>2. Year</label>
+            <br>
+            @Html.TextBox("Year2")
+        </p>
+
+        <input type="submit" value="Submit">
+
+    }
+}  

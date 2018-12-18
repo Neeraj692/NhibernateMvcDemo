@@ -1,0 +1,19 @@
+﻿<!--?xml version="1.0" encoding="utf-8" ?-->
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="NHibernateDemo" namespace="NHibernateDemo.Models.Person">
+
+  <class name="Car" table="testdb.cars">
+    <id name="Id" column="car_id" type="Int64">
+      <generator class="sequence">
+        <param name="sequence">testdb.cars_car_id_seq</param>
+      </generator>
+    </id>
+
+
+    <property name="ModelName" column="model_name" type="String"></property>
+    <property name="Year" column="year" type="Int32"></property>
+
+    <many-to-one name="Person" class="NHibernateDemo.Models.Person.Person" column="person_id"></many-to-one>
+
+  </class>
+
+</hibernate-mapping>
