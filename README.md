@@ -71,3 +71,5 @@ GRANT ALL ON TABLE testdb.cars TO user1;
 ALTER TABLE testdb.cars_car_id_seq OWNER TO veeresh;
 GRANT ALL ON TABLE testdb.cars_car_id_seq TO veeresh;
 GRANT USAGE ON TABLE testdb.cars_car_id_seq TO user1;
+
+and for more details you can follow http://www.veereshr.com/DotNet/NHibernatePostgreSql this link 
