@@ -31,7 +31,8 @@ GRANT CONNECT ON DATABASE testdb TO user1;
  
 CREATE SCHEMA testdb AUTHORIZATION veeresh;
 GRANT USAGE ON SCHEMA testdb TO user1;
---------------------------------then after you have to create this two table -------------------------------------
+
+Postgre Sql Database Script for the person table 
 1.
 CREATE TABLE testdb.persons
 (
@@ -49,6 +50,8 @@ GRANT ALL ON TABLE testdb.persons TO user1;
 ALTER TABLE testdb.persons_person_id_seq OWNER TO veeresh;
 GRANT ALL ON TABLE testdb.persons_person_id_seq TO veeresh;
 GRANT USAGE ON TABLE testdb.persons_person_id_seq TO user1;
+
+Postgre Sql Database Script for the car table 
 2.
 CREATE TABLE testdb.cars
 (
